@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                git 'https://github.com/emiliogh/.git'
+                git 'https://github.com/emiliogh/git_prueba.git'
             }
         }
         stage('Validar conexión ansible') {
@@ -27,5 +27,8 @@ pipeline {
 				])
             }
         }
+    }
+	options {
+        skipDefaultCheckout(true)
     }
 }
