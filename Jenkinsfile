@@ -16,7 +16,7 @@ pipeline {
 				    configName:'AnsibleController',
 					transfers: [
 					    sshTransfer(
-						cleanRemote:false
+						cleanRemote:false,
 						execCommand:'ansible-playbook playbook_ping.yml --limit nodo',
 						execTimeout:120000
 						)
