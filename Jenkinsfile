@@ -28,4 +28,7 @@ pipeline {
             }
         }
     }
+	options {
+        skipDefaultCheckout(true)
+    }
 }
