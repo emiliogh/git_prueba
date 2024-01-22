@@ -11,7 +11,7 @@ pipeline {
         stage('Validar conexión ansible') {
             steps {
                 echo "validar conexión ansible controlador con nodo"
-				sshPublishers(publishers:
+				sshPublisher(publishers:
 				[sshPublisherDesc(
 				    configName:'AnsibleController',
 					transfers: [
@@ -27,5 +27,8 @@ pipeline {
 				])
             }
         }
+    }
+	options {
+        skipDefaultCheckout(true)
     }
 }
