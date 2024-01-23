@@ -17,7 +17,7 @@ pipeline {
 					transfers: [
 					    sshTransfer(
 						cleanRemote:false,
-						execCommand:'ansible-playbook playbook_ping.yml --limit nodo',
+						execCommand:'ansible-playbook playbook_ping.yml --limit nodo_prueba',
 						execTimeout:120000
 						)
 					],
