@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'ansible-docker'
-    }
+    agent none
     stages {
         stage('Source') {
             steps {
