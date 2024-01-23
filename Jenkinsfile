@@ -13,7 +13,6 @@ pipeline {
                 echo "validar conexión ansible controlador con nodo"
 				sshPublisher(publishers:
 				[sshPublisherDesc(
-				    configName:'agente1_tfm',
 					transfers: [
 					    sshTransfer(
 						cleanRemote:false,
