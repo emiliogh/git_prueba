@@ -1,5 +1,5 @@
 pipeline {
-    agent {
+    agent agente1_tfm{
         label 'ansible-docker'
     }
     stages {
