@@ -13,6 +13,7 @@ pipeline {
                 echo "validar conexión ansible controlador con nodo"
 				sshPublisher(publishers:
 				[sshPublisherDesc(
+				    configName:'AnsibleController',
 					transfers: [
 					    sshTransfer(
 						cleanRemote:false,
