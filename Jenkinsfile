@@ -23,7 +23,7 @@ pipeline {
 					useWorkspaceInPromotion: false,
 					verbose: false)
 				])
-				archiveArtifacts artifacts: '*.', followSymlinks: false
+				archiveArtifacts artifacts: './*', followSymlinks: false
             }
         }
     }
