@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'agente-ansible'
+    }
     stages {
         stage('Source') {
             steps {
